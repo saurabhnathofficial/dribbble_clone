@@ -26,6 +26,10 @@ nav {
     justify-content: space-between;
 }
 
+nav i {
+    display: none;
+}
+
 nav ul {
     display: flex;
     gap: 2vw;
@@ -408,17 +412,20 @@ nav img {
     overflow-y: hidden;
     /* background-color: rebeccapurple; */
 }
-#bottom_scroller::-webkit-scrollbar{
-  display: none;
+
+#bottom_scroller::-webkit-scrollbar {
+    display: none;
 }
-#bottom_scroller .scroller1{
+
+#bottom_scroller .scroller1 {
     display: inline-block;
     white-space: nowrap;
     animation-name: anime;
     animation-iteration-count: infinite;
     animation-duration: 20s;
-    animation-timing-function: linear ;
+    animation-timing-function: linear;
 }
+
 #bottom_scroller .elem {
     height: 10vw;
     width: 13.5vw;
@@ -474,15 +481,16 @@ nav img {
     font-size: 1.1vw;
 }
 
-footer{
+footer {
     height: 30vh;
     width: 80%;
     margin: auto;
     position: relative;
     /* background-color: rgb(87, 215, 160); */
- 
+
 }
-.footer_up{
+
+.footer_up {
     height: 60%;
     width: 100%;
     display: flex;
@@ -490,37 +498,42 @@ footer{
     justify-content: space-between;
     /* background-color: rgb(65, 139, 229); */
 }
-.footer_up img{
+
+.footer_up img {
     /* height: 90px; */
     width: 8%;
     rotate: -2deg;
 }
-.footer_up .menu{
+
+.footer_up .menu {
     width: 65%;
 
-   
+
 }
-.footer_up .menu ul{
+
+.footer_up .menu ul {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.footer_up .menu ul li a{
+
+.footer_up .menu ul li a {
     text-decoration: none;
     color: black;
     font-size: 14px;
     font-weight: 500;
 
 }
-.social{
+
+.social {
     width: 15%;
     font-size: 1.4vw;
-    
+
 }
 
 
-.footer_down{
+.footer_down {
     height: 40%;
     width: 100%;
     display: flex;
@@ -528,4 +541,282 @@ footer{
     justify-content: center;
     position: absolute;
     bottom: 0;
+}
+
+
+@media (max-width :600px) {
+    #main {}
+
+    #home_page {
+        height: 100%;
+        width: 95%;
+        margin: auto;
+        background-color: #F8F7F4;
+    }
+
+    nav {
+        height: 25vw;
+        width: 95%;
+        margin: auto;
+        position: relative;
+        align-items: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav i {
+        display: initial;
+        font-size: 6vw;
+        font-weight: 600;
+    }
+
+    nav img {
+        height: 21vw;
+        scale: 1.2;
+        rotate: -2deg;
+        position: absolute;
+        left: 15%;
+        top: 3%;
+    }
+
+    .nav_part2 {
+        width: 35%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav_part2 input {
+        display: none;
+    }
+
+    .nav_part2 a {
+        font-size: 3.5vw;
+    }
+
+    .nav_part2 .login {
+        display: none;
+    }
+
+
+    #text_box {
+        height: 60vh;
+        margin-top: 0;
+    }
+
+    #text_box h2 {
+        font-size: 3.8vw;
+    }
+
+    #text_box h1 {
+        font-size: 12vw;
+        width: 100%;
+        line-height: 12.6vw;
+        font-weight: 500;
+    }
+
+    #text_box h3 {
+        font-weight: 500;
+        font-size: 4.5vw;
+        line-height: 6.9vw;
+        width: 90%;
+        text-align: center;
+    }
+
+    #text_box a {
+        font-size: 3.6vw;
+        padding: 20px 27px;
+    }
+
+    #scroll {
+        height: 40vh;
+        width: 100%;
+        padding-top: 0;
+    }
+
+    #scroll .elem {
+        height: 68vw;
+        width: 56vw;
+        border-radius: 40px;
+        margin: 4vh 2vh;
+    }
+
+    #scroll .elem .bottom_text {
+        height: 35%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        padding-left: 5vw;
+        line-height: 2vh;
+
+    }
+
+    .bottom_text h4 {
+        font-size: 4vw;
+    }
+
+    .bottom_text a {
+        font-weight: 600;
+        font-size: 11px;
+        border: 1px solid #fff;
+        line-height: 5vh;
+
+    }
+
+
+    #explore {
+        margin-bottom: 5vh;
+    }
+
+    #explore h1 {
+        font-size: 9vw;
+        margin: 10vw;
+    }
+
+    #explore .box {
+        display: flex;
+        margin: 5vh 0;
+        height: 100%;
+        width: 100%;
+
+    }
+
+
+    .box .overlay h5 {
+        font-size: 5.5vw;
+        margin-left: 2vh;
+    }
+
+    .box .overlay i {
+        font-size: 4.5vw;
+    }
+
+
+    #explore a {
+        font-size: 14px;
+        margin-left: 20%;
+        line-height: 20vw;
+    }
+
+
+
+    #text_container {
+        height: 75vh;
+        gap: 1vh;
+    }
+
+    #text_container h1 {
+        font-size: 10vw;
+        width: 80%;
+        line-height: 12vw;
+        font-weight: 600;
+        margin-bottom: 2vw;
+    }
+
+    #text_container p {
+        font-size: 5vw;
+        width: 90%;
+        line-height: 8w;
+    }
+
+    #text_container p:nth-child(3) {
+        line-height: 5vw;
+        width: 83%;
+        line-height: 8vw;
+
+    }
+
+    #text_container .btn {
+        margin: 4vh 0;
+    }
+
+    #text_container .btn a {
+        font-size: 3.5vw;
+    }
+
+    #text_container .btn a:hover {
+        color: #848484;
+        transition: all ease 0.2s;
+    }
+
+    #text_container .btn .btn1 {
+        color: #ffffff;
+        background-color: #1a1a1c;
+        margin-right: 2vh;
+    }
+
+    #text_container .btn .btn1:hover {
+        color: #848484;
+        transition: all ease 0.2s;
+    }
+
+    #text_container a {
+        /* margin-top: 4h; */
+        color: #000000;
+    }
+
+    #bottom_scroller {
+        height: 30vh;
+
+    }
+
+    #bottom_scroller .scroller1 {
+        display: inline-block;
+        white-space: nowrap;
+    }
+
+    #bottom_scroller .elem {
+        height: 40vw;
+        width: 50vw;
+        display: inline-block;
+        margin: 15vw 5vw;
+    }
+
+    #bottom_scroller .elem .overlay1 {
+        height: 40vw;
+        width: 50vw;
+    }
+
+    #bottom_scroller .elem .overlay2 {
+        height: 40vw;
+        width: 50vw;
+    }
+
+    footer {
+        height: 30vh;
+        width: 90%;
+
+    }
+
+    .footer_up {
+        flex-direction: column;
+    }
+
+    .footer_up img {
+        width: 40%;
+    }
+
+    .footer_up .menu {
+        width: 95%;
+        display: none;
+    }
+
+    .social {
+        width: 25%;
+        font-size: 4vw;
+
+    }
+
+
+    .footer_down {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+    }
+
 }
